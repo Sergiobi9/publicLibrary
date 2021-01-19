@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <
+    <com.example.mylibrary.ScanLayout
+        android:id="@+id/scan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.mylibrary.ScanLayout>
 
 </RelativeLayout>
