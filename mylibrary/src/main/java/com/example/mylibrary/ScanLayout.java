@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
 
-public class ScanLayout  extends RelativeLayout {
+public class ScanLayout extends RelativeLayout {
 
     private Context mContext;
     private AttributeSet attrs;
