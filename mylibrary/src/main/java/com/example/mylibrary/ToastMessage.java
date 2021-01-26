@@ -7,9 +7,9 @@ import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
 
-public class ToastMessage {
+class ToastMessage {
 
-    public static void showToast(Activity activity, String message){
+    protected static void showToast(Activity activity, String message){
         ActivityCompat.requestPermissions(activity,
                 new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                 1);

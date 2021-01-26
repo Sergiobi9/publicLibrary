@@ -105,4 +105,5 @@ public class ScanLayout extends RelativeLayout {
         image.setScaleType(scaleType);
         image.setImageResource(resID);
     }
+
 }
