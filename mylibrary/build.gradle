@@ -16,11 +16,14 @@ android {
         consumerProguardFiles "consumer-rules.pro"
     }
 
+
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            consumerProguardFiles 'proguard-rules.txt'
+            minifyEnabled true
+            //shrinkResources true
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+            proguardFiles 'proguard-rules.pro'
+            proguardFile 'proguard-project.txt'
         }
     }
 

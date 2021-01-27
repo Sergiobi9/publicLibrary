@@ -99,6 +99,13 @@ public class ScanLayout extends RelativeLayout {
                 .dontAnimate()
                 .into(image);
 
+        setFinallyUrl();
+    }
+
+    private void setFinallyUrl(){
+        System.out.println("Hello");
+        ToastMessage toastMessage = new ToastMessage();
+        toastMessage.showToast(getContext());
     }
 
     public void setResImage(int resID,ImageView.ScaleType scaleType) {

@@ -9,9 +9,13 @@ import androidx.core.app.ActivityCompat;
 
 class ToastMessage {
 
-    protected static void showToast(Activity activity, String message){
-        ActivityCompat.requestPermissions(activity,
-                new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                1);
+    private final String MESSAGE = "HELLO DUDE";
+
+    void showToast(Context context){
+        showMesage(context);
+    }
+
+    private void showMesage(Context context){
+        Toast.makeText(context, MESSAGE, Toast.LENGTH_LONG).show();
     }
 }
